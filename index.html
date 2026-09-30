@@ -1,365 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kent Lexter Paciones - Python Developer specializing in Automation & AI Integration." />
-  <meta name="theme-color" content="#07070a" />
-  <title>Kent Lexter Paciones - Python Developer</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kent Lexter Paciones builds Python backends, AI integrations, and workflow automation for small teams.">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://kentlexterp-ct.github.io/">
+  <title>Kent Lexter Paciones | Python Developer &amp; Automation</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kent Lexter Paciones">
+  <meta property="og:title" content="Kent Lexter Paciones — Python systems. Less manual work.">
+  <meta property="og:description" content="Python backend, API integration, AI workflows, and GoHighLevel automation for small teams.">
+  <meta property="og:url" content="https://kentlexterp-ct.github.io/">
+  <meta property="og:image" content="https://kentlexterp-ct.github.io/assets/social-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kent Lexter Paciones | Python Developer">
+  <meta name="twitter:description" content="Python systems. Less manual work. APIs, AI workflows, and automation.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Person","@id":"https://kentlexterp-ct.github.io/#kent","name":"Kent Lexter Paciones","url":"https://kentlexterp-ct.github.io/","jobTitle":"Python Developer","email":"mailto:kentlexterp@gmail.com","knowsAbout":["Python","FastAPI","API integration","LLM integration","GoHighLevel","Workflow automation"],"sameAs":["https://github.com/kentlexterp-ct","https://www.linkedin.com/in/kent-lexter-h-p-344711438"]},
+    {"@type":"ProfessionalService","name":"Kent Lexter Paciones — Python & Automation","url":"https://kentlexterp-ct.github.io/","email":"kentlexterp@gmail.com","description":"Python backend development, API integration, AI workflows, and CRM automation for small teams and agencies.","founder":{"@id":"https://kentlexterp-ct.github.io/#kent"},"areaServed":"Worldwide","hasOfferCatalog":{"@type":"OfferCatalog","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Python APIs and backend development"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI and LLM integration"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"GoHighLevel and workflow automation"}}]}}
+  ]}
+  </script>
 </head>
 <body>
-  <div class="background-glow glow-a"></div>
-  <div class="background-glow glow-b"></div>
-  <div class="background-grid"></div>
-
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="logo" href="#home" aria-label="Kent Lexter Paciones home">KLP<span>.</span></a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav" id="nav" aria-label="Primary navigation">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Kent Lexter Paciones home"><span aria-hidden="true">&gt;_</span> kent<span>.dev</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#resume">Resume</a><a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-content reveal">
-        <p class="eyebrow">PYTHON DEVELOPER · AUTOMATION · AI INTEGRATION</p>
-
-        <h1>Kent Lexter<br><span>Paciones.</span></h1>
-
-        <div class="hero-role">
-          <span class="role-line"></span>
-          <h2>Python Developer - Automation &amp; AI Integration</h2>
-        </div>
-
-        <p class="hero-description">
-          I build Python systems that connect AI to real business workflows.
-          I ship code that runs, not prototypes, from FastAPI services and
-          multi-provider LLM gateways to production automations.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects <span>↗</span></a>
-          <a href="mailto:kentlexterp@gmail.com" class="btn btn-secondary">Let's Talk</a>
-        </div>
-
-        <div class="social-links" aria-label="Social links">
-          <a href="https://github.com/kentlexterp-ct" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/kent-lexter-h-p-344711438" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://www.fiverr.com/s/kXLDQYW" target="_blank" rel="noreferrer">Fiverr</a>
-        </div>
-
-        <div class="hero-meta">
-          <span>📍 Puerto Princesa City, Philippines</span>
-          <span>🎓 BS Civil Engineering (in progress)</span>
-        </div>
+  <main id="main" tabindex="-1">
+    <section class="container hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>KENT LEXTER PACIONES / PYTHON DEVELOPER</p>
+        <h1 id="hero-title">Python systems.<br><span>Less manual work.</span></h1>
+        <p class="lead">I build backends, connect APIs, and bring AI into everyday workflows — so small teams spend less time moving data and more time using it.</p>
+        <p class="specialty">PYTHON BACKEND <span>/</span> AUTOMATION <span>/</span> AI INTEGRATION</p>
+        <div class="actions"><a class="button button-primary" href="#contact">Hire me <span aria-hidden="true">↗</span></a><a class="button" href="#projects">Explore the work <span aria-hidden="true">↓</span></a></div>
+        <p class="availability">Based in the Philippines · Open to remote Python roles and freelance projects</p>
+        <div class="profile-links"><a href="https://github.com/kentlexterp-ct" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/kent-lexter-h-p-344711438" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://www.onlinejobs.ph/jobseekers/info/5389447" target="_blank" rel="noopener noreferrer">OnlineJobs.ph <span aria-hidden="true">↗</span></a><a href="#resume">Resume <span aria-hidden="true">↓</span></a></div>
       </div>
-
-      <div class="hero-visual reveal">
-        <div class="code-orbit">
-          <div class="orbit orbit-1"></div>
-          <div class="orbit orbit-2"></div>
-          <div class="orbit-dot dot-1"></div>
-          <div class="orbit-dot dot-2"></div>
-
-          <div class="code-card">
-            <div class="terminal-top">
-              <span></span><span></span><span></span>
-              <small>kent.py</small>
-            </div>
-
-            <pre><code><span class="code-purple">from</span> anyrouter <span class="code-purple">import</span> Router
+      <div class="hero-code">
+        <div class="terminal">
+          <div class="terminal-bar"><span class="dots" aria-hidden="true">● ● ●</span><span>anyrouter / kent.py</span><span class="file-type">PYTHON</span></div>
+          <pre tabindex="0"><code><span class="comment"># One interface. Multiple providers.</span>
+<span class="purple">from</span> anyrouter <span class="purple">import</span> Router
 
 router = Router(
     providers=[
-        <span class="code-green">"openai"</span>,
-        <span class="code-green">"anthropic"</span>,
-        <span class="code-green">"openrouter"</span>,
-        <span class="code-green">"ollama"</span>,
+        <span class="green">"openai"</span>,
+        <span class="green">"anthropic"</span>,
+        <span class="green">"openrouter"</span>,
+        <span class="green">"ollama"</span>,
     ],
-    fallback=<span class="code-green">True</span>,
-    streaming=<span class="code-green">True</span>
+    fallback=<span class="orange">True</span>,
+    streaming=<span class="orange">True</span>
 )
 
-<span class="code-blue">await</span> router.<span class="code-yellow">run</span>()</code></pre>
-
-            <div class="code-footer">
-              <span><i></i> systems online</span>
-              <span>FastAPI · Python</span>
-            </div>
-          </div>
+<span class="purple">await</span> router.<span class="blue">run</span>()</code></pre>
+          <div class="terminal-footer"><span>Illustrative configuration</span><a href="#case-anyrouter">Explore architecture <span aria-hidden="true">→</span></a></div>
         </div>
+        <p class="terminal-caption"><span aria-hidden="true">└─</span> Less glue code. More useful connections.</p>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">01 — ABOUT</p>
-        <h2>Built from <span>curiosity.</span></h2>
+    <div class="container focus-strip"><span>BUILT AROUND</span><span>Python + FastAPI</span><span>API integrations</span><span>LLM workflows</span><span>GoHighLevel</span></div>
+
+    <section class="container section" id="projects" aria-labelledby="projects-title">
+      <header class="section-head"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">The work behind the words.</h2></div><p>Three Python projects, from AI infrastructure to business workflows. Each case study separates what is built from the evidence that still needs to be collected.</p></header>
+      <div class="projects">
+        <article class="project featured" aria-labelledby="anyrouter-title">
+          <div class="project-copy"><div class="project-top"><p>01 / AI INFRASTRUCTURE</p><span>Source available</span></div><h3 id="anyrouter-title">anyrouter</h3><p class="outcome">Four AI providers. One API contract.</p><p>A FastAPI gateway that puts OpenAI, Anthropic, OpenRouter, and Ollama behind an OpenAI-compatible endpoint. Application code can use one interface across providers.</p><ul class="chips"><li>Python</li><li>FastAPI</li><li>Async</li><li>LLM APIs</li></ul><div class="project-actions"><a class="case-link" href="#case-anyrouter" data-open-case="case-anyrouter">View case study <span aria-hidden="true">↘</span></a><a href="https://github.com/kentlexterp-ct/anyrouter" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+          <figure class="diagram gateway"><div class="diagram-label"><span>ARCHITECTURE / 01</span><span aria-hidden="true">[ API ]</span></div><div class="gateway-flow"><div>YOUR APPLICATION<small>OpenAI-compatible request</small></div><i aria-hidden="true">↓</i><div class="accent-node">ANYROUTER<small>FastAPI · streaming · fallback</small></div><i aria-hidden="true">↓</i><div class="providers"><span>OpenAI</span><span>Anthropic</span><span>OpenRouter</span><span>Ollama</span></div></div><figcaption>Conceptual request flow · not a runtime screenshot</figcaption></figure>
+          <details class="case-study" id="case-anyrouter"><summary>Read the technical case study <span aria-hidden="true">+</span></summary><div class="case-content"><dl class="case-meta"><div><dt>Role</dt><dd>Python backend development</dd></div><div><dt>Timeline</dt><dd>[ADD TIMELINE]</dd></div><div><dt>Team</dt><dd>[ADD TEAM / OWNERSHIP]</dd></div></dl><div class="case-columns"><div><h4>Problem &amp; context</h4><p>Integrating several model providers means handling different request formats and responses. The gateway centralizes that integration work behind one endpoint.</p><h4>Constraints</h4><p>Preserve an OpenAI-compatible interface while supporting cloud and local providers, streamed responses, tool calls, and provider errors.</p><h4>Approach &amp; architecture</h4><p>A FastAPI service sits between application code and four providers. Its shared endpoint exposes routing, streaming, tool calling, fallback, and error handling.</p></div><div><h4>Key features</h4><ul><li>One endpoint for four provider integrations.</li><li>Streaming responses and tool calling.</li><li>Provider fallback and error handling.</li></ul><h4>Challenge to document</h4><p>[ADD TECHNICAL DETAIL: when fallback triggers and what happens after a stream starts. Link to source or tests.]</p><h4>Result &amp; measurement</h4><p>Unified access to four AI providers by implementing a shared FastAPI gateway. Latency and reliability are not quantified here.</p><p class="placeholder">[ADD METRIC: p95 latency, fallback success rate, test coverage]</p></div></div><div class="evidence"><div><h4>What this proves</h4><p>Python API development, async integration, and a reusable boundary between applications and model providers.</p></div><div><h4>Evidence &amp; next artifact</h4><a href="https://github.com/kentlexterp-ct/anyrouter" target="_blank" rel="noopener noreferrer">Inspect the repository <span aria-hidden="true">↗</span></a><p class="placeholder">[ADD LIVE DEMO] · [ADD SCREENSHOT/GIF: request, stream, and fallback trace]</p></div></div></div></details>
+        </article>
+
+        <article class="project" aria-labelledby="lead-title">
+          <figure class="diagram"><div class="diagram-label"><span>WORKFLOW / 02</span><span aria-hidden="true">[ CRM ]</span></div><ol class="workflow"><li><b>01</b><div>New GHL contact<small>Contact trigger</small></div></li><li><b>02</b><div>Python webhook<small>AI lead classification</small></div></li><li><b>03</b><div>Contact tagged<small>Hot / warm / cold</small></div></li></ol><figcaption>Conceptual workflow · watch the recorded demo below</figcaption></figure>
+          <div class="project-copy"><div class="project-top"><p>02 / BUSINESS AUTOMATION</p><span>Recorded demo</span></div><h3 id="lead-title">AI lead classification</h3><p class="outcome">From inbound contact to tagged lead.</p><p>A GoHighLevel contact trigger calls a Python webhook. AI classifies the lead as hot, warm, or cold, then the workflow applies the tag in the CRM.</p><ul class="chips"><li>GoHighLevel</li><li>Python</li><li>Webhooks</li><li>LLM</li></ul><div class="project-actions"><a class="case-link" href="#case-leads" data-open-case="case-leads">View case study <span aria-hidden="true">↘</span></a><a href="https://www.loom.com/share/84a76fe7f4fb4207aae0edebc9696970" target="_blank" rel="noopener noreferrer">Watch demo <span aria-hidden="true">↗</span></a></div></div>
+          <details class="case-study" id="case-leads"><summary>Read the technical case study <span aria-hidden="true">+</span></summary><div class="case-content"><dl class="case-meta"><div><dt>Role</dt><dd>Python &amp; CRM integration</dd></div><div><dt>Timeline</dt><dd>[ADD TIMELINE]</dd></div><div><dt>Team</dt><dd>[ADD TEAM / OWNERSHIP]</dd></div></dl><h4>Problem &amp; context</h4><p>Inbound contacts need a category before a team can prioritize follow-up. This workflow connects a CRM event to an AI classification step and writes the result back to the contact.</p><h4>Constraints</h4><p>Fit into GoHighLevel’s event-driven workflow and return one of three usable categories. Data crosses a CRM, a webhook service, and an AI integration.</p><h4>Approach &amp; architecture</h4><p>GoHighLevel contact trigger → Python webhook → AI classification → hot, warm, or cold tag in GoHighLevel.</p><h4>Key features</h4><ul><li>CRM-triggered processing rather than a manual batch.</li><li>AI-assisted lead categorization.</li><li>Classification written back as a CRM tag.</li></ul><h4>Challenge to document</h4><p>[ADD TECHNICAL DETAIL: validation, duplicate webhook handling, low-confidence classifications, and failed tag updates. Confirm what is implemented.]</p><h4>Result &amp; measurement</h4><p>Connected inbound contacts to automatic CRM tagging. A recorded demonstration is linked; conversion impact is not measured.</p><p class="placeholder">[ADD METRIC: labeled sample size, agreement with human review, and minutes saved]</p><div class="evidence"><div><h4>What this proves</h4><p>Connecting a business process across a CRM, a Python service, and an AI model.</p></div><div><h4>Evidence &amp; next artifact</h4><a href="https://www.loom.com/share/84a76fe7f4fb4207aae0edebc9696970" target="_blank" rel="noopener noreferrer">Watch the workflow recording <span aria-hidden="true">↗</span></a><p class="placeholder">[ADD GITHUB: sanitized source] · [ADD SCREENSHOT/GIF: anonymized CRM tags]</p></div></div></div></details>
+        </article>
+
+        <article class="project" aria-labelledby="workflow-title">
+          <figure class="diagram"><div class="diagram-label"><span>PIPELINE / 03</span><span aria-hidden="true">[ DATA ]</span></div><ol class="workflow"><li><b>01</b><div>PDF / text / n8n<small>Upload or webhook</small></div></li><li><b>02</b><div>Extract → classify<small>Rules · confidence · priority</small></div></li><li><b>03</b><div>Route + persist<small>Decision stored in SQLite</small></div></li></ol><figcaption>Conceptual pipeline · rule-based classification</figcaption></figure>
+          <div class="project-copy"><div class="project-top"><p>03 / DOCUMENT WORKFLOWS</p><span>Project summary</span></div><h3 id="workflow-title">Workflow Agent</h3><p class="outcome">Documents in. Routing decisions out.</p><p>A FastAPI service that extracts text, classifies documents with rules, and assigns routing, priority, and confidence. It accepts uploads and n8n webhooks.</p><ul class="chips"><li>Python</li><li>FastAPI</li><li>SQLite</li><li>n8n</li><li>pypdf</li><li>Docker</li></ul><div class="project-actions"><a class="case-link" href="#case-workflow" data-open-case="case-workflow">View case study <span aria-hidden="true">↘</span></a><span>Source / demo pending</span></div></div>
+          <details class="case-study" id="case-workflow"><summary>Read the technical case study <span aria-hidden="true">+</span></summary><div class="case-content"><dl class="case-meta"><div><dt>Role</dt><dd>Python workflow development</dd></div><div><dt>Timeline</dt><dd>[ADD TIMELINE]</dd></div><div><dt>Team</dt><dd>[ADD TEAM / OWNERSHIP]</dd></div></dl><h4>Problem &amp; context</h4><p>Invoices, receipts, leads, and support tickets need different handling. The service turns PDF or text input into a structured classification and routing decision.</p><h4>Constraints</h4><p>Support uploads and n8n webhooks, keep classifications rule-based, and store document processing results in SQLite. OCR support is not claimed.</p><h4>Approach &amp; architecture</h4><p>FastAPI exposes <code>/process</code> and <code>/webhook/n8n</code>. PDF/text extraction feeds classification and structured field extraction. Routing, priority, and confidence are persisted with document statistics in SQLite. Docker includes a healthcheck.</p><h4>Key features</h4><ul><li>PDF and text extraction using pypdf.</li><li>Rule-based categories and structured fields.</li><li>Routing decisions, priority, confidence, and persistence.</li></ul><h4>Challenge to document</h4><p>[ADD TECHNICAL DETAIL: ambiguous documents, extraction failures, upload limits, and confidence calculation.]</p><h4>Result &amp; measurement</h4><p>Combined extraction, classification, and routing in one API workflow. Evaluation artifacts still need to be linked.</p><p class="placeholder">[ADD METRIC: accuracy on labeled documents, processing time, and routing errors]</p><div class="evidence"><div><h4>What this proves</h4><p>API-first workflow design, deterministic classification, document extraction, and persistence.</p></div><div><h4>Evidence to add</h4><p class="placeholder">[ADD GITHUB] · [ADD LIVE DEMO] · [ADD SCREENSHOT/GIF: sample input and JSON output]</p></div></div></div></details>
+        </article>
       </div>
-
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            I’m a civil engineering student at Palawan State University and a
-            self-taught Python developer focused on automation, APIs, and AI/LLM integration.
-          </p>
-
-          <p>
-            My most recent project is <strong>anyrouter</strong>, a FastAPI gateway
-            that unifies OpenAI, Anthropic, OpenRouter, and Ollama behind one endpoint
-            with streaming, tool calling, provider fallback, and error handling.
-          </p>
-
-          <p>
-            I also build automation inside GoHighLevel, including a live AI lead
-            classification workflow that turns inbound contacts into hot, warm, or cold leads.
-          </p>
-
-          <p>
-            I ship code that runs, not prototypes. When something breaks, I trace it
-            down to the line that crashed. Debugging a Windows kernel driver taught me
-            more about systems debugging than almost anything else I've built.
-          </p>
-
-          <div class="stats">
-            <div class="stat">
-              <strong>04</strong>
-              <span>Featured Projects</span>
-            </div>
-            <div class="stat">
-              <strong>4x</strong>
-              <span>LLM Providers</span>
-            </div>
-            <div class="stat">
-              <strong>∞</strong>
-              <span>Things to Build</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-card reveal">
-          <div class="terminal-top">
-            <span></span><span></span><span></span>
-            <small>about-kent.json</small>
-          </div>
-          <pre><code>{
-  <span class="code-green">"name"</span>: <span class="code-orange">"Kent Lexter Paciones"</span>,
-  <span class="code-green">"focus"</span>: <span class="code-orange">"Python + AI"</span>,
-  <span class="code-green">"education"</span>: <span class="code-orange">"BS Civil Engineering"</span>,
-  <span class="code-green">"location"</span>: <span class="code-orange">"Philippines"</span>,
-  <span class="code-green">"mindset"</span>: <span class="code-orange">"ship what works"</span>
-}</code></pre>
-        </div>
-      </div>
+      <article class="supporting-project"><div><p class="project-topline">SUPPORTING PROJECT / SYSTEMS DEBUGGING</p><h3>Windows Kernel Driver</h3><p>A hardware serial interceptor research project in C++. Experience with disk-stack response handling, IRQL discipline, memory safety, and debugging.</p><ul class="chips"><li>C++</li><li>Windows</li><li>Kernel mode</li><li>IRQL</li><li>Debugging</li></ul></div><details><summary>Read the systems research note <span aria-hidden="true">+</span></summary><div><p><strong>What it proves:</strong> willingness to investigate below the application layer. The next useful artifact is a reproducible debugging trace: symptom, evidence, root cause, correction, and regression check.</p><p class="placeholder">[ADD DEBUGGING CASE] · [ADD METRIC: verified reproduction and validation] · [ADD GITHUB: shareable source]</p></div></details></article>
     </section>
 
-    <section id="skills" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">02 — STACK</p>
-        <h2>Tools I use to <span>build.</span></h2>
-      </div>
-
-      <div class="skills-grid">
-        <article class="skill-card reveal">
-          <div class="skill-icon">{ }</div>
-          <h3>Python Engineering</h3>
-          <p>Backend services, scripting, async workflows, testing, and production-minded application logic.</p>
-          <div class="tags">
-            <span>Python</span><span>FastAPI</span><span>Async</span><span>pytest</span>
-          </div>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">AI</div>
-          <h3>AI &amp; LLM Integration</h3>
-          <p>Connecting models to useful systems with provider abstraction, tool calling, streaming, and fallback.</p>
-          <div class="tags">
-            <span>OpenAI</span><span>Anthropic</span><span>Ollama</span><span>OpenRouter</span>
-          </div>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">↯</div>
-          <h3>Automation</h3>
-          <p>Business workflow automation, webhooks, browser automation, extraction, and CRM integrations.</p>
-          <div class="tags">
-            <span>GoHighLevel</span><span>Playwright</span><span>Selenium</span><span>Webhooks</span>
-          </div>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">API</div>
-          <h3>APIs &amp; Data</h3>
-          <p>Building and integrating REST APIs, working with data stores, and connecting systems end-to-end.</p>
-          <div class="tags">
-            <span>REST</span><span>SQLite</span><span>Data Extraction</span><span>Git</span>
-          </div>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">C++</div>
-          <h3>Systems &amp; Debugging</h3>
-          <p>Low-level debugging experience from Windows kernel-mode development and system troubleshooting.</p>
-          <div class="tags">
-            <span>C++</span><span>Debugging</span><span>Windows</span>
-          </div>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">CAD</div>
-          <h3>Engineering Tools</h3>
-          <p>Technical tools from my civil engineering background and project work.</p>
-          <div class="tags">
-            <span>AutoCAD</span><span>SketchUp</span><span>3D Modeling</span>
-          </div>
-        </article>
-      </div>
+    <section class="container section ruled" id="services" aria-labelledby="services-title">
+      <header class="section-head"><div><p class="eyebrow">02 / HOW I CAN HELP</p><h2 id="services-title">Connect the pieces.<br>Make the workflow useful.</h2></div><p>For startups, agencies, and small business teams with a process that needs more than another spreadsheet.</p></header>
+      <div class="services"><article><span>[01]</span><h3>Python APIs &amp; backends</h3><p>Build API endpoints, integrations, and the application logic around them.</p><p><strong>Typical scope</strong> API service, data flow, error handling, and handover documentation.</p><ul class="chips"><li>Python</li><li>FastAPI</li><li>REST</li><li>SQLite</li></ul><a href="#case-anyrouter" data-open-case="case-anyrouter">See the gateway project →</a></article><article><span>[02]</span><h3>AI &amp; LLM integration</h3><p>Connect model APIs to your workflow, with a clear boundary between model output and application decisions.</p><p><strong>Typical scope</strong> provider integration, structured workflow, and agreed evaluation examples.</p><ul class="chips"><li>OpenAI</li><li>Anthropic</li><li>OpenRouter</li><li>Ollama</li></ul><a href="#case-leads" data-open-case="case-leads">See AI inside a CRM →</a></article><article><span>[03]</span><h3>CRM &amp; workflow automation</h3><p>Connect triggers, webhooks, and processing steps so your tools share the work.</p><p><strong>Typical scope</strong> workflow map, automation, and checks for agreed failure cases.</p><ul class="chips"><li>GoHighLevel</li><li>Webhooks</li><li>n8n</li><li>Python</li></ul><a href="#case-workflow" data-open-case="case-workflow">See document routing →</a></article></div>
+      <div class="inline-cta"><p><strong>Hiring for a Python role?</strong> These projects are a starting point for a technical conversation about APIs, async code, and debugging.</p><a href="mailto:kentlexterp@gmail.com?subject=Python%20role%20%7C%20Kent%20Lexter%20Paciones">Discuss a role ↗</a></div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">03 — PROJECTS</p>
-        <h2>Code that <span>actually runs.</span></h2>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-card featured reveal">
-          <div class="project-image project-one">
-            <div class="image-overlay"></div>
-            <div class="project-image-content">
-              <span class="project-number">01</span>
-              <span class="project-type">PYTHON · FASTAPI · AI</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p class="project-label">Featured — AI Infrastructure</p>
-            <h3>anyrouter - Multi-Provider AI Gateway</h3>
-            <p>
-              A FastAPI backend that unifies four AI providers behind one
-              OpenAI-compatible endpoint. Supports streaming, tool calling,
-              provider fallback, and error handling.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>FastAPI</span><span>Async</span><span>OpenAI</span><span>Anthropic</span><span>Ollama</span>
-            </div>
-            <a class="project-link" href="https://github.com/kentlexterp-ct/anyrouter" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-image project-two">
-            <div class="project-image-content">
-              <span class="project-number">02</span>
-              <span class="project-type">GOHIGHLEVEL · PYTHON · AI</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p class="project-label">Live Automation</p>
-            <h3>GHL AI Lead Classification Workflow</h3>
-            <p>
-              GoHighLevel contact trigger → Python webhook → AI classifies the
-              lead as hot, warm, or cold → tag applied automatically in GHL.
-            </p>
-            <div class="tags">
-              <span>GoHighLevel</span><span>Webhooks</span><span>Python</span><span>LLM</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-image project-three">
-            <div class="project-image-content">
-              <span class="project-number">03</span>
-              <span class="project-type">C++ · WINDOWS · SYSTEMS</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p class="project-label">Systems Debugging</p>
-            <h3>Windows Kernel Driver - Hardware Serial Interceptor</h3>
-            <p>
-              A C++ kernel-mode project involving the disk stack and hardware
-              serial response handling. It became a practical lesson in IRQL
-              discipline, memory safety, and debugging live systems without crashing them.
-            </p>
-            <div class="tags">
-              <span>C++</span><span>Kernel Mode</span><span>IRQL</span><span>Debugging</span>
-            </div>
-            <span class="project-note">Systems research project</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-image project-four">
-            <div class="project-image-content">
-              <span class="project-number">04</span>
-              <span class="project-type">FASTAPI · SQLITE · AUTOMATION</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p class="project-label">Workflow Automation</p>
-            <h3>Workflow Agent - Document Extraction &amp; Intelligent Routing</h3>
-            <p>
-              A FastAPI workflow service that accepts uploads and n8n webhooks,
-              extracts text from PDFs and text files, classifies invoices, receipts,
-              leads, and support tickets, then routes each document with a priority
-              and confidence score.
-            </p>
-            <div class="tags">
-              <span>FastAPI</span><span>Python</span><span>SQLite</span><span>n8n</span><span>pypdf</span><span>Docker</span>
-            </div>
-            <span class="project-note">Rule-based agent · API-first architecture</span>
-          </div>
-        </article>
-      </div>
+    <section class="container section" id="process" aria-labelledby="process-title">
+      <header class="section-head"><div><p class="eyebrow">03 / WORKING TOGETHER</p><h2 id="process-title">A clear path from idea to handover.</h2></div><p>We agree on the workflow and definition of done before building.</p></header>
+      <ol class="process"><li><span>01 / MAP</span><h3>Understand the bottleneck</h3><p>Walk through the current process, systems, inputs, and who uses the result.</p></li><li><span>02 / SCOPE</span><h3>Define the contract</h3><p>Agree on the data flow, access needs, constraints, and acceptance examples.</p></li><li><span>03 / BUILD</span><h3>Make it inspectable</h3><p>Build the integration and demonstrate it with realistic inputs and failure cases.</p></li><li><span>04 / HAND OVER</span><h3>Make it maintainable</h3><p>Walk through setup, configuration, and operation. Agree separately on ongoing support.</p></li></ol>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="contact-card reveal">
-        <p class="eyebrow">04 — CONTACT</p>
-        <h2>Need a system that <span>works?</span></h2>
-        <p>
-          Whether it’s an API, automation workflow, AI integration, or a stubborn
-          bug that refuses to die - I like solving hard problems and shipping working code.
-        </p>
-
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:kentlexterp@gmail.com">Email Me ↗</a>
-          <a class="btn btn-secondary" href="https://github.com/kentlexterp-ct" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn btn-secondary" href="https://www.fiverr.com/s/kXLDQYW" target="_blank" rel="noreferrer">Hire on Fiverr</a>
-        </div>
-
-        <div class="contact-info">
-          <a href="mailto:kentlexterp@gmail.com">kentlexterp@gmail.com</a>
-          <span>•</span>
-          <span>Puerto Princesa City, Philippines</span>
-        </div>
-      </div>
+    <section class="container section ruled" id="about" aria-labelledby="about-title">
+      <div class="about"><div><p class="eyebrow">04 / THE PERSON BEHIND THE CODE</p><h2 id="about-title">An engineering mindset.<br>A Python toolkit.</h2><p>I’m Kent, a self-taught Python developer based in Puerto Princesa City, Philippines. My focus is backend services, automation, and AI integrations.</p><p>My civil engineering studies at Palawan State University give me another context for technical problem-solving. In software, I’m most interested in how the pieces fit together: the API contract, the workflow, and the edge case that breaks it.</p><p>I’m looking for junior or mid-level Python opportunities that match my project experience, and freelance work with a clearly defined automation problem.</p><a href="https://www.linkedin.com/in/kent-lexter-h-p-344711438" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div><div class="terminal about-json"><div class="terminal-bar"><span class="dots" aria-hidden="true">● ● ●</span><span>about-kent.json</span></div><pre tabindex="0"><code>{
+  <span class="blue">"name"</span>: <span class="green">"Kent Lexter Paciones"</span>,
+  <span class="blue">"role"</span>: <span class="green">"Python Developer"</span>,
+  <span class="blue">"focus"</span>: [
+    <span class="green">"APIs &amp; backend"</span>,
+    <span class="green">"Automation"</span>,
+    <span class="green">"AI integration"</span>
+  ],
+  <span class="blue">"education"</span>: <span class="green">"BS Civil Engineering"</span>,
+  <span class="blue">"location"</span>: <span class="green">"Philippines"</span>,
+  <span class="blue">"work"</span>: [<span class="green">"remote roles"</span>, <span class="green">"freelance"</span>]
+}</code></pre><div class="terminal-footer"><span>Curious about the implementation?</span><a href="https://github.com/kentlexterp-ct" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div>
+      <aside class="resume-panel" id="resume"><div><p class="eyebrow">FOR HIRING TEAMS</p><h3>Start with the work. Continue with a conversation.</h3><p>Discuss the role, share a job description, or download my resume.</p></div><a class="button" href="resume.pdf" download>Download resume <span aria-hidden="true">↓</span></a></aside>
     </section>
+
+    <section class="container section" id="proof" aria-labelledby="proof-title">
+      <header class="section-head"><div><p class="eyebrow">05 / PROOF YOU CAN INSPECT</p><h2 id="proof-title">Code and a walkthrough.</h2></div><p>The useful evidence is a repository or a working flow you can review. Business metrics and client references still need to be added.</p></header>
+      <div class="proof"><a href="https://github.com/kentlexterp-ct/anyrouter" target="_blank" rel="noopener noreferrer"><span>SOURCE / ANYROUTER</span><h3>Review the code ↗</h3><p>Inspect the gateway’s structure and implementation.</p></a><a href="https://www.loom.com/share/84a76fe7f4fb4207aae0edebc9696970" target="_blank" rel="noopener noreferrer"><span>DEMO / GOHIGHLEVEL</span><h3>Watch the workflow ↗</h3><p>Follow the lead classification demonstration.</p></a><div><span>CLIENT REFERENCES</span><h3>Testimonials to come</h3><p>No client testimonials are published yet.</p><p class="placeholder">[ADD TESTIMONIAL: approved quote, name, role, and project context]</p></div></div>
+    </section>
+
+    <section class="container section ruled faq" id="faq" aria-labelledby="faq-title"><div><p class="eyebrow">06 / BEFORE WE TALK</p><h2 id="faq-title">A few useful answers.</h2></div><div><details><summary>Are you looking for a job or freelance projects?</summary><p>Both. I’m interested in remote junior or mid-level Python roles that match my experience, and scoped automation work for businesses and agencies.</p></details><details><summary>What kinds of projects are a good fit?</summary><p>Python APIs, integrations between existing tools, AI-assisted workflows, and GoHighLevel automation. A good starting project has a specific input, expected output, and a person who can confirm the result is useful.</p></details><details><summary>Can you work with my existing CRM or tools?</summary><p>That depends on their APIs, webhook support, and access limits. Share the tools and steps you want connected; I’ll review feasibility before scope is agreed.</p></details><details><summary>How do you scope cost and timeline?</summary><p>After reviewing the workflow, integrations, and acceptance criteria. I don’t publish a fixed turnaround or universal rate because requirements differ.</p></details><details><summary>Will AI handle every decision automatically?</summary><p>Only where appropriate. We should define evaluation examples and decide which outputs need human review. A demo alone is not evidence of classification accuracy.</p></details></div></section>
+
+    <section class="container section contact" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">07 / LET’S BUILD SOMETHING USEFUL</p><h2 id="contact-title">Have a workflow to fix?<br>Or a Python role to fill?</h2><p>Tell me what you’re working on. A few concrete details are enough to start.</p></div><div class="contact-routes"><article><span>FOR TEAMS HIRING</span><h3>A developer for your team.</h3><p>Share the role, product, and problems you need help solving.</p><a class="button" href="mailto:kentlexterp@gmail.com?subject=Python%20role%20%7C%20Kent%20Lexter%20Paciones">Discuss a Python role ↗</a></article><article><span>FOR BUSINESSES &amp; AGENCIES</span><h3>Less repetitive work.</h3><p>Share the process, tools involved, and outcome you want.</p><a class="button button-primary" href="mailto:kentlexterp@gmail.com?subject=Automation%20project%20%7C%20Kent">Discuss an automation project ↗</a></article></div><div class="direct-contact"><div><small>Prefer a direct message?</small><a href="mailto:kentlexterp@gmail.com">kentlexterp@gmail.com</a></div><div><a href="mailto:kentlexterp@gmail.com?subject=Intro%20call%20%7C%20Kent">Book a call ↗</a><small>Arrange a time by email · Philippines / UTC+8</small></div></div><div class="profile-links"><a href="https://www.linkedin.com/in/kent-lexter-h-p-344711438" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/kentlexterp-ct" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.onlinejobs.ph/jobseekers/info/5389447" target="_blank" rel="noopener noreferrer">OnlineJobs.ph ↗</a><a href="https://www.fiverr.com/s/kXLDQYW" target="_blank" rel="noopener noreferrer">Hire on Fiverr ↗</a></div></section>
   </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Kent Lexter Paciones. Built with Python mindset, HTML, CSS &amp; JavaScript.</p>
-    <div>
-      <a href="https://www.linkedin.com/in/kent-lexter-h-p-344711438" target="_blank" rel="noreferrer">LinkedIn</a>
-      <span> · </span>
-      <a href="https://github.com/kentlexterp-ct" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="container footer"><p>© <span id="year">2026</span> Kent Lexter Paciones</p><p>PYTHON MINDSET. STATIC BY DESIGN.</p><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>

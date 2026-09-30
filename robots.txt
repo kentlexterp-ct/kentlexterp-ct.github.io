@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kentlexterp-ct.github.io/sitemap.xml
