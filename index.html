@@ -299,6 +299,25 @@ button { color: inherit; }
   .reveal { opacity: 1; transform: none; }
 }
 
+
+/* LeadFlow screenshot gallery */
+.leadflow-showcase { background: #f8fafc; }
+.leadflow-heading { max-width: 740px; margin-bottom: 30px; }
+.leadflow-heading h2 { font-family: Manrope,sans-serif; font-size: clamp(32px,4vw,46px); line-height: 1.1; letter-spacing: -.04em; margin: 15px 0; }
+.leadflow-heading p { margin: 0; color: var(--muted); }
+.leadflow-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.leadflow-shot { margin: 0; border-radius: 19px; border: 1px solid var(--line); background: #fff; overflow: hidden; box-shadow: 0 12px 36px rgba(15,23,42,.055); }
+.leadflow-shot a { display: block; background: #0d1117; overflow: hidden; }
+.leadflow-shot img { display: block; width: 100%; height: auto; aspect-ratio: 1.9; object-fit: contain; transition: transform .25s ease; }
+.leadflow-shot a:hover img { transform: scale(1.015); }
+.leadflow-featured { grid-column: 1 / -1; }
+.leadflow-featured img { max-height: 440px; aspect-ratio: 2.18; object-fit: contain; }
+.leadflow-shot figcaption { display: grid; gap: 5px; padding: 17px 20px 20px; }
+.leadflow-shot figcaption strong { font-size: 15px; font-weight: 800; }
+.leadflow-shot figcaption span { font-size: 13px; line-height: 1.55; color: var(--muted); }
+.leadflow-disclaimer { font-size: 12px; margin: 20px 0 0; color: var(--muted); }
+@media(max-width:700px) { .leadflow-gallery { grid-template-columns: 1fr; } .leadflow-featured { grid-column: auto; } .leadflow-featured img { aspect-ratio: 1.9; } .leadflow-shot figcaption { padding: 14px 16px 18px; } }
+
 </style>
   <script type="application/ld+json">
   {
@@ -520,6 +539,40 @@ button { color: inherit; }
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+
+    <section class="section leadflow-showcase" id="leadflow-gallery" aria-labelledby="leadflow-gallery-title">
+      <div class="container">
+        <div class="leadflow-heading reveal">
+          <span class="eyebrow">Project Walkthrough · Private Codebase</span>
+          <h2 id="leadflow-gallery-title">Inside LeadFlow</h2>
+          <p>From discovering local businesses to reviewing records, tracking research progress, and exporting prospect lists. These are actual screenshots of the Python + Streamlit application.</p>
+        </div>
+        <div class="leadflow-gallery">
+          <figure class="leadflow-shot leadflow-featured reveal">
+            <a href="assets/leadflow/discovery.webp" target="_blank" rel="noopener noreferrer" aria-label="Open LeadFlow discovery screenshot full size"><img src="assets/leadflow/discovery.webp" alt="LeadFlow search form showing business category, Puerto Princesa location, radius, and search action" loading="lazy" width="1908" height="872"></a>
+            <figcaption><strong>01 · Discover businesses</strong><span>Choose a category, city, search radius, and result limit using OpenStreetMap data.</span></figcaption>
+          </figure>
+          <figure class="leadflow-shot reveal">
+            <a href="assets/leadflow/results.webp" target="_blank" rel="noopener noreferrer" aria-label="Open LeadFlow search results full size"><img src="assets/leadflow/results.webp" alt="LeadFlow discovered-business results table with available websites, emails, phones, and completeness scores" loading="lazy" width="1897" height="735"></a>
+            <figcaption><strong>02 · Review search results</strong><span>See sourced businesses and any publicly available contact fields before saving them.</span></figcaption>
+          </figure>
+          <figure class="leadflow-shot reveal">
+            <a href="assets/leadflow/database.webp" target="_blank" rel="noopener noreferrer" aria-label="Open LeadFlow database screenshot full size"><img src="assets/leadflow/database.webp" alt="LeadFlow saved lead database with summary counts, status filters, and searchable records" loading="lazy" width="1906" height="762"></a>
+            <figcaption><strong>03 · Organize lead records</strong><span>Search saved businesses, filter by status, and review contact-data completeness.</span></figcaption>
+          </figure>
+          <figure class="leadflow-shot reveal">
+            <a href="assets/leadflow/analytics.webp" target="_blank" rel="noopener noreferrer" aria-label="Open LeadFlow analytics dashboard full size"><img src="assets/leadflow/analytics.webp" alt="LeadFlow analytics charts showing score distribution, lead status, and industry counts" loading="lazy" width="1908" height="870"></a>
+            <figcaption><strong>04 · Explore analytics</strong><span>Visualize contact availability, score distribution, status breakdown, and top industries.</span></figcaption>
+          </figure>
+          <figure class="leadflow-shot reveal">
+            <a href="assets/leadflow/review.webp" target="_blank" rel="noopener noreferrer" aria-label="Open LeadFlow duplicate review full size"><img src="assets/leadflow/review.webp" alt="LeadFlow repeated-name review table showing OSM source links, proximity clues, and score audit" loading="lazy" width="1907" height="878"></a>
+            <figcaption><strong>05 · Inspect duplicate clues</strong><span>Compare repeated names and audit contact-data scoring without automatically merging records.</span></figcaption>
+          </figure>
+        </div>
+        <p class="leadflow-disclaimer">LeadFlow is a local portfolio project. Contact completeness scores do not indicate buying intent, and outreach remains manual. Source code is private.</p>
       </div>
     </section>
 
