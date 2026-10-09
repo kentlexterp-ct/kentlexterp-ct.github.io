@@ -141,7 +141,7 @@ button { color: inherit; }
 .projects-head .eyebrow { grid-column: 1/-1; justify-self: start; }
 .projects-head h2 { margin-top: 0; }
 .projects-head p { margin: 0 0 4px; color: #cbd5e1; max-width: 500px; }
-.project-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .project-card { background: #fff; color: var(--text); border-radius: 22px; overflow: hidden; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 14px 30px rgba(0,0,0,.12); transition: transform .2s ease; }
 .project-card:hover { transform: translateY(-4px); }
 .project-diagram { min-height: 150px; padding: 24px; display: flex; align-items: center; justify-content: center; gap: 12px; background: linear-gradient(180deg, #f8fbff, #eff6ff); border-bottom: 1px solid var(--line); }
@@ -154,6 +154,7 @@ button { color: inherit; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
 .tags span { background: var(--blue-soft); border-color: #dbeafe; color: #2563eb; padding: 6px 8px; }
 .project-body > a { display: inline-flex; gap: 6px; margin-top: 18px; font-size: 12px; font-weight: 800; color: var(--blue); }
+.project-private-note { display: inline-flex; margin-top: 18px; font-size: 12px; font-weight: 700; color: #64748b; }
 
 .why-grid { display: grid; grid-template-columns: 320px 1fr; gap: 58px; }
 .benefit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
@@ -500,10 +501,22 @@ button { color: inherit; }
             </div>
             <div class="project-body">
               <div class="project-kicker">Python + APIs</div>
-              <h3>AnyRouter — Python / FastAPI AI API Gateway</h3>
-              <p>Built AnyRouter, an AI API gateway using Python and FastAPI. The project demonstrates experience with backend development, REST APIs, AI integrations, and technical workflow logic. It shows that I can build custom technical components when standard automation platforms are not enough.</p>
-              <div class="tags"><span>Python</span><span>FastAPI</span><span>REST API</span><span>AI</span></div>
+              <h3>AnyRouter V2 — Secure Multi-Provider AI Gateway</h3>
+              <p>Developed an OpenAI-compatible FastAPI gateway connecting OpenAI, Anthropic, OpenRouter, and local Ollama models. Implements policy-aware routing, provider fallback, circuit breakers, Server-Sent Events streaming, scoped API authentication, rate limiting, and Prometheus-compatible monitoring. Validated with 125 automated tests and 89 subtests across Windows and Ubuntu in GitHub Actions; production failover has not been independently validated.</p>
+              <div class="tags"><span>Python</span><span>FastAPI</span><span>HTTPX</span><span>LLM APIs</span><span>Resilience</span><span>CI/CD</span></div>
               <a href="https://github.com/kentlexterp-ct/anyrouter" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-diagram" aria-label="LeadFlow local business research workflow diagram">
+              <span>OSM / Overpass</span><i>→</i><span>LeadFlow</span><i>→</i><span>CSV / Excel</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Lead Research + Data Automation · Private Project</div>
+              <h3>LeadFlow — B2B Lead Research Dashboard</h3>
+              <p>Built a Streamlit dashboard that discovers mapped businesses using OpenStreetMap, stores research records in SQLite, handles duplicate leads, and tracks follow-up status. Includes location and industry filters, contact-data completeness scoring, optional limited public-email lookup, analytics, and filtered CSV/Excel export. Outreach and lead qualification remain manual. Source code is private.</p>
+              <div class="tags"><span>Python</span><span>Streamlit</span><span>OpenStreetMap</span><span>SQLite</span><span>pandas</span><span>Excel</span></div>
+              <span class="project-private-note" aria-label="Source code private">Private source · Screenshots available on request</span>
             </div>
           </article>
         </div>
