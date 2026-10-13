@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="4" fill="#0d1117"/><path d="m16 18 14 14-14 14m21 0h13" fill="none" stroke="#82e6b1" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kent Lexter KL monogram">
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="#0f172a"/>
+  <path d="M15 17v30m1-15 14-15M16 32l14 15" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 17v30h13" fill="none" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9 56h46" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</svg>
