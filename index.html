@@ -495,7 +495,7 @@ button { color: inherit; }
             <div class="project-body">
               <div class="project-kicker">CRM + AI</div>
               <h3>AI Lead Classification Workflow — GoHighLevel</h3>
-              <p>Built an AI lead classification workflow connected with GoHighLevel. The project combines AI processing with CRM workflows to support more organized lead handling. It demonstrates my ability to work across CRM systems, automation, and AI-based processes rather than handling each separately.</p>
+              <p>Built a GoHighLevel-connected workflow that classifies incoming lead messages as hot, warm, or cold. Unclear cases go to manual review instead of being forced into a category. CRM tags and triggers support lead assignment and follow-up.</p>
               <div class="tags"><span>GoHighLevel</span><span>AI</span><span>CRM Automation</span></div>
               <a href="https://www.loom.com/share/84a76fe7f4fb4207aae0edebc9696970" target="_blank" rel="noreferrer">Watch demo <span aria-hidden="true">↗</span></a>
             </div>
@@ -507,8 +507,8 @@ button { color: inherit; }
             </div>
             <div class="project-body">
               <div class="project-kicker">Automation + Backend</div>
-              <h3>n8n / FastAPI Document-Processing Workflow</h3>
-              <p>Built a document-processing workflow using n8n and FastAPI. The project combines visual automation with a custom Python backend for tasks that require more technical control. It demonstrates my ability to work beyond standard no-code workflows when a process needs custom logic.</p>
+              <h3>Workflow Agent — Document Processing & Routing</h3>
+              <p>Built a FastAPI-based Workflow Agent that extracts content from supported documents, classifies document types, records structured information, and routes items by priority and confidence. SQLite stores processing history, while an n8n webhook is available for workflow integration. The system is rule-based, not LLM-powered; the n8n connection has not been validated in a live deployment.</p>
               <div class="tags"><span>n8n</span><span>FastAPI</span><span>Python</span></div>
             </div>
           </article>
@@ -535,6 +535,71 @@ button { color: inherit; }
               <p>Built a Streamlit dashboard that discovers mapped businesses using OpenStreetMap, stores research records in SQLite, handles duplicate leads, and tracks follow-up status. Includes location and industry filters, contact-data completeness scoring, optional limited public-email lookup, analytics, and filtered CSV/Excel export. Outreach and lead qualification remain manual. Source code is private.</p>
               <div class="tags"><span>Python</span><span>Streamlit</span><span>OpenStreetMap</span><span>SQLite</span><span>pandas</span><span>Excel</span></div>
               <span class="project-private-note" aria-label="Source code private">Private source · Screenshots available on request</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-diagram" aria-label="RecoverOS lead recovery workflow diagram">
+              <span>Missed Lead</span><i aria-hidden="true">→</i><span>RecoverOS</span><i aria-hidden="true">→</i><span>CRM Follow-up</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">CRM + AI · Locally Tested Prototype</div>
+              <h3>RecoverOS — AI-Assisted Lead Recovery</h3>
+              <p>Built a local V1 backend prototype for handling missed calls, dormant leads, and incomplete bookings. The system includes GoHighLevel messaging/calendar integration points, Gemini-assisted responses, human handoff, and PayMongo payment flow hooks. Local tests passed, but live provider integrations have not been verified end to end.</p>
+              <div class="tags"><span>Python</span><span>FastAPI</span><span>GoHighLevel</span><span>Gemini</span><span>PayMongo</span></div>
+              <span class="project-private-note">Prototype · Real-provider deployment not verified</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-diagram" aria-label="Web scraper data collection and storage flow diagram">
+              <span>Web Pages</span><i aria-hidden="true">→</i><span>Scraper</span><i aria-hidden="true">→</i><span>SQLite / JSON</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Python + Data Collection · Completed Project</div>
+              <h3>Web Scraper — Configurable Data Collection</h3>
+              <p>Built a Python web scraper using Requests and BeautifulSoup for extracting structured data from public pages. Supports configurable CSS selectors, SQLite and JSON storage, hash-based duplicate detection, retries, and logging for repeatable research and monitoring tasks.</p>
+              <div class="tags"><span>Python</span><span>BeautifulSoup</span><span>Requests</span><span>SQLite</span><span>JSON</span></div>
+              <span class="project-private-note">Independent project · Source not publicly linked</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-diagram" aria-label="Snake AI reinforcement learning diagram">
+              <span>Snake Game</span><i aria-hidden="true">→</i><span>DQN Agent</span><i aria-hidden="true">→</i><span>Training</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Machine Learning · Completed Project</div>
+              <h3>Snake AI — Reinforcement Learning Agent</h3>
+              <p>Built a Snake-playing reinforcement learning project using a custom neural network and Deep Q-Network training. Includes prioritized experience replay, model save/load functionality, and a Tkinter interface for observing training. This is a personal experiment, not a benchmarked production AI system.</p>
+              <div class="tags"><span>Python</span><span>DQN</span><span>Reinforcement Learning</span><span>Tkinter</span></div>
+              <span class="project-private-note">Independent project · Source not publicly linked</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-diagram" aria-label="Jarvis local voice assistant diagram">
+              <span>Voice Input</span><i aria-hidden="true">→</i><span>Jarvis</span><i aria-hidden="true">→</i><span>Desktop Tools</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Local AI + Voice · Paused Project</div>
+              <h3>Jarvis — Local Desktop Voice Assistant</h3>
+              <p>Developed an experimental Python voice assistant combining speech recognition, text-to-speech, a local Ollama model, and limited desktop actions such as launching approved apps and taking screenshots. Development is currently paused; the assistant is not a finished product.</p>
+              <div class="tags"><span>Python</span><span>Ollama</span><span>SpeechRecognition</span><span>pyttsx3</span></div>
+              <span class="project-private-note">Unfinished prototype · Development paused</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-diagram" aria-label="Windows kernel driver experiment diagram">
+              <span>Driver Code</span><i aria-hidden="true">→</i><span>WDK / WinDbg</span><i aria-hidden="true">→</i><span>Debugging</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Windows Systems · Incomplete Prototype</div>
+              <h3>Windows Kernel Driver — Systems Learning Prototype</h3>
+              <p>Explored Windows kernel-mode C++ development, storage-stack concepts, and driver debugging with the Windows Driver Kit and WinDbg. This experimental driver did not successfully load, so it is presented as a learning and debugging exercise rather than a working or production-ready driver.</p>
+              <div class="tags"><span>C++</span><span>Windows WDK</span><span>WinDbg</span><span>Kernel Debugging</span></div>
+              <span class="project-private-note">Experimental · Not successfully loaded</span>
             </div>
           </article>
         </div>
